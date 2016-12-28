@@ -1,0 +1,2 @@
+# terminal-ubuntu
+Zsh, powerline
