@@ -105,7 +105,7 @@ Alias
 Quelques aliases à ajouter dans le **zshrc**:
 
 ```bash
-alias gl='git log --graph --decorate=short --color --format=format:"%C(yellow)%h%C(reset) %C(auto)%C(reset)     %C(green)[%cd]%C(reset)  %x09%C(white)%<(60,trunc)%s %C(bold blue)<%an>%C(auto)%d" -n 20'
+alias gl='git --no-pager log --graph --decorate=short --color --format=format:"%C(yellow)%h%C(reset) %C(auto)%C(reset)     %C(green)[%cd]%C(reset)  %x09%C(white)%<(60,trunc)%s %C(bold blue)<%an>%C(auto)%d" -n 20'
 alias gst='git status'
 alias ll='ls -alF'
 alias ls='ls --color=auto'
