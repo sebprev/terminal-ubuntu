@@ -111,3 +111,20 @@ alias ll='ls -alF'
 alias ls='ls --color=auto'
 ...
 ```
+
+Intégrer un terminal ZSH dans VS Code
+--------
+
+Sous Linux, pas de soucis, cela fonctionne nativement.
+Sur Windows (7), il faut créer un bat
+
+```bash
+@echo off
+set CHERE_INVOKING=1 set MSYSTEM=MINGW64 & C:\\msys64\\usr\\bin\\zsh.exe --login -i 
+```
+
+Et dans un VS Code:
+
+```
+"terminal.integrated.shell.windows": "C:\\chemin\\terminalPourVSCode.bat"
+```
