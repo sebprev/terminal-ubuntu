@@ -2,37 +2,37 @@ Installation de Powerline Shell
 ========================
 
 ```bash
-$ sudo apt-get install python-pip
-$ pip install --user git+git://github.com/Lokaltog/powerline
+sudo apt-get install python-pip
+pip install --user git+git://github.com/Lokaltog/powerline
 ```
 
 Téléchargeons les polices et installons les dans le répertoire de polices d’Ubuntu :
 
 ```bash
-$ wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
-$ sudo mv PowerlineSymbols.otf /usr/share/fonts/
-$ wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
-$ sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/
-$ sudo fc-cache -vf
-$ git clone https://github.com/Lokaltog/powerline-fonts.git
-$ sudo mv powerline-fonts/ /usr/share/fonts/
-$ sudo fc-cache -vf
+wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
+sudo mv PowerlineSymbols.otf /usr/share/fonts/
+wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+sudo fc-cache -vf
+git clone https://github.com/Lokaltog/powerline-fonts.git
+sudo mv powerline-fonts/ /usr/share/fonts/
+sudo fc-cache -vf
 ```
 
 Téléchargeons désormais powerline-shell :
 
 ```bash
-$ git clone https://github.com/milkbikis/powerline-shell
-$ cd powerline-shell
-$ cp config.py.dist config.py
-$ python install.py
-$ cp powerline-shell.py ~
+git clone https://github.com/milkbikis/powerline-shell
+cd powerline-shell
+cp config.py.dist config.py
+python install.py
+cp powerline-shell.py ~
 ```
 
 Il ne reste plus qu’à modifier votre prompt en ajoutant ces quelques à la fin de votre fichier . bashrc
 
 ```bash
-$ sudo gedit ~/.bashrc
+sudo gedit ~/.bashrc
 ```
 
 Ajouter en fin du fichier:
